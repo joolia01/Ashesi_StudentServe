@@ -30,6 +30,9 @@ volunteering opportunities or events
                 <div class="category">
                 <a href="../Organization/Organization_Logout.php">Logout </a>
                 </div>
+                <div class="category">
+                <a href="../View/Homepage.php">Home </a>
+                </div>
             </nav>
             
             <div id="mid-page">

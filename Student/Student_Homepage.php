@@ -32,6 +32,9 @@ This page allows organizations to register for opportunities and events and trac
                 <div class="category">
                 <a href="../Student/Student_Logout.php">Logout</a>
                 </div>
+                <div class="category">
+                <a href="../View/Homepage.php">Home</a>
+                </div>
                 
             </nav>
             

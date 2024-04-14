@@ -56,6 +56,7 @@
           
               <!--Password--> 
               <label for="password"><b>Password</b></label>
+              <!--An <input> element with type="password" that must contain 8 or more characters that are of at least one number, and one uppercase and lowercase letter:-->
               <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Enter Password" name="password" id="password" required>  <br> <br>
           
               <button type="submit" class="registerbtn" name = "registerbtn">Register</button> <br> <br>
