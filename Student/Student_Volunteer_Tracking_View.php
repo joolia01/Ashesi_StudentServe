@@ -7,6 +7,14 @@ This page is to allow students to track their volunteer opportunities-->
         <meta name = "viewport", content = "width = device-width,initial-scale = 1.0">
     <title> StudentServe Volunteering Platform </title>
     <link rel="stylesheet" href="../css/trackingViewCSS.css">
+    <?php
+        //  Create and include the core file on this page to check if the user has logged in.
+        // include '../settings/core.php';
+        include '../Student/trackings_fxn.php';
+
+        // Check if the user is logged in using the function created on the core.php page 
+        // checkLogin(); // Apparently this is not necessary at the moment  
+        ?>
     </head>
     <body>
         <form action="../Student/Student_Volunteer_Tracking_Action.php" method="post" name ="trackOpportunity" id = "trackOpportunity">
@@ -60,5 +68,30 @@ This page is to allow students to track their volunteer opportunities-->
     return true; 
     }
     </script>
+    <!-- Display the list of trackings-->
+    <div>
+    <section>
+    <h2>Trackings</h2>
+
+            <table border="1">
+            <thead>
+                <tr>
+                <th colspan="10">Trackings</th>
+                </tr>
+                <tr>
+                <th>Activity Date</th>
+                <th>Number of Hours</th>
+                <th>Description of Activity</th>
+                <th>Achievements</th>
+                <th>Feedback</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Trackings -->
+                <?php
+                displayTrackings();
+                ?>
+            </tbody>
+            </table>
     </body>
 </html>

@@ -49,7 +49,7 @@ and where organizations can sign up to provide opportunities for Ashesi students
                         Need Help?
                     </h2>
                     <p>
-                        If you encounter any questions or issues while navigating our platform, don't hesitate to reach out to us through our Contact Us page. We're here to support you every step of the way.
+                        If you encounter any questions or issues while navigating our platform, don't hesitate to reach out to us through our contact- 0266844402. We're here to support you every step of the way.
                     </p>
                     <h2>
                         Spread The Word!
