@@ -6,11 +6,12 @@ This page is to allow students to track their volunteer opportunities-->
         <meta charset = "UTF-8">
         <meta name = "viewport", content = "width = device-width,initial-scale = 1.0">
     <title> StudentServe Volunteering Platform </title>
+    <link rel="stylesheet" href="../css/trackingViewCSS.css">
     </head>
     <body>
         <form action="../Student/Student_Volunteer_Tracking_Action.php" method="post" name ="trackOpportunity" id = "trackOpportunity">
             <div class="container">
-              <h1>Tack your Volunteer Opportunities</h1>
+              <h1>Track your Volunteer Opportunities</h1>
               <p>Please fill in this form to track your volunteer opportunity.</p>
               <hr>
 

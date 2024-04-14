@@ -113,13 +113,22 @@ CREATE TABLE `volunteerOpportunity` (
 /* Registration for Volunteer Opportunity*/
 CREATE TABLE `registration`(
     `registrationID` int(10) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    `studentID` int(10) NOT NULL,
+    `firstName` varchar(50) NOT NULL,
+    `lastName` varchar(50) NOT NULL, 
+    `gender` int(11) NOT NULL,
+    `dob` date NOT NULL,
+    `phoneNumber` varchar(50) NOT NULL,
+    `interest` int(11),     /* Foreign key */
+    `skills` varchar(500) NOT NULL,
+    `previousExperiences` varchar(600) NOT NULL,
+    `gpa` DECIMAL,
+    `email` varchar(255) NOT NULL,
     `registerDate` date NOT NULL,
     `oppID` int,   /*Foreign key*/
-    `sID` int,     /*Foreign key*/
-    `companyID` int,      /*Foreign key*/
+    `approvalStatus` ENUM('pending', 'approved', 'declined') NOT NULL DEFAULT 'pending',
     FOREIGN KEY (`oppID`) references `volunteerOpportunity`(`opportunityID`),
-    FOREIGN KEY (`sID`) references `student`(`studentID`),
-    FOREIGN KEY (`companyID`) references `organization`(`organizationID`)
+    FOREIGN KEY (`interest`) REFERENCES `interests`(`interestID`)
 );
 
 /* Volunteer Tracking */

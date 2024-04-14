@@ -10,7 +10,7 @@ volunteering opportunities or events
     <meta charset = "UTF-8">
     <meta name = "viewport", content = "width = device-width,initial-scale = 1.0">
     <title> Ashesi StudentServe Volunteering Platform</title>
-    <!--<link rel="stylesheet" href="../css/style.css"> -->
+    <link rel="stylesheet" href="../css/organizationHomePageCSS.css"> 
 </head>
 <body>
     <div id="page-container">
@@ -25,16 +25,13 @@ volunteering opportunities or events
                     <a href="../Organization/Create_Volunteering_Opportunity_View.php">Create a Volunteering Opportunity </a>
                 </div>
                 <div class="category">
-                <a href="#">Create an Event </a>
-                </div>
-                <div class="category">
-                <a href="#">View Registered Students </a>
+                <a href="../Organization/Organization_Registered_Students_View.php">View Registered Students </a>
                 </div>
             </nav>
             
             <div id="mid-page">
                 <article>
-                    <img id ="hero-image" src="../images/StudentServe Logo.png">
+                    <img id ="hero-image" src="../images/StudentServe Logo (1).png">
                     <h1>
                         Welcome to StudentServe!
                     </h1>

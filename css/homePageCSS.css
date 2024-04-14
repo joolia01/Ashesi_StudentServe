@@ -1,0 +1,79 @@
+/* Reset default browser styles */
+html, body, header, nav, article, footer {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set base font size and family */
+body {
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+/* Page container */
+#page-container {
+    background-color: #fff;
+    color: #000;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Navigation */
+nav {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.category {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.category a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Mid-page content */
+#mid-page {
+    margin-bottom: 20px;
+}
+
+/* Main article */
+article {
+    text-align: center;
+}
+
+h1, h2 {
+    color: #cc0000;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+a {
+    color: #cc0000;
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+#copyright, #template {
+    margin-bottom: 10px;
+}
+
+#copyright a {
+    color: #fff;
+}

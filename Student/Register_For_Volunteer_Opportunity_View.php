@@ -4,13 +4,13 @@
         <meta charset = "UTF-8">
         <meta name = "viewport", content = "width = device-width,initial-scale = 1.0">
     <title> StudentServe Volunteering Platform </title>
-    <link rel="stylesheet" href="../css/studentRegisterCSS.css">
+    <link rel="stylesheet" href="../css/studentOpportunityViewCSS.css">
     </head>
     <body>
-        <form action="../Student/Student_Register_Action.php" method="post" name ="register" id = "register">
+        <form action="../Student/Register_For_Volunteer_Opportunity_Action.php" method="post" name ="register" id = "register">
             <div class="container">
-              <h1>Student Register</h1>
-              <p>Please fill in this form to create an account.</p>
+              <h1>Volunteer Opportunity Register</h1>
+              <p>Please fill in this form to register for a Volunteer Opportunity.</p>
               <hr>
 
               <!--Student ID-->
@@ -72,39 +72,42 @@
               <label for="email"><b>Email</b></label>
               <input type="email"  pattern ="[a-z0-9._%+\-]+@ashesi\.edu\.gh$"  placeholder="Enter Email" name="email" id="email" required>  <br> <br>
           
-              <!--Password--> 
-              <label for="password"><b>Password</b></label>
-              <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Enter Password" name="password" id="password" required>  <br> <br>
-          
+              <!--Register Date-->
+              <label for="registerDate">Register Date:</label><br>
+              <input type="date" id="registerDate" pattern="\d{1,2}/\d{1,2}/\d{4}" name="registerDate" placeholder="Select the register date" required> <br> <br>
+
+
+              <!--Opportunity ID -->
+              <label for="opportunityID">opportunity ID:</label><br>
+              <input type="text" pattern = "\b([0-9]|[1-9][0-9]*)\b" id="opportunityID" name="opportunityID"placeholder="Enter the opportunity ID" required>  <br> <br>
+
               <button type="submit" class="registerbtn" name="registerbtn">Register</button> <br> <br>
-            </div>
-            
-            <div class="container signin">
-              <p>Already have an account? <a href="../Student/Student_Login_View.php">Sign in</a>.</p>
             </div>
           </form>
 
           <!-- Javascript Validation. Got assistance from w3schools -->
-    <script>
-      
-    function validateForm() 
-   {
-      let orgName = document.forms["register"]["organizationName"].value;
-      let mission = document.forms["register"]["mission"].value;
-      let phoneNumber = document.forms["register"]["phoneNumber"].value;
-      let email = document.forms["register"]["email"].value;
-      let password = document.forms["register"]["password"].value;
+          <script>
+        function validateForm() 
+        {
+            // Retrieve form elements
+            let studentID = document.getElementById("studentID").value;
+            let fname = document.getElementById("fname").value;
+            let lname = document.getElementById("lname").value;
+            let gender = document.querySelector('input[name="gender"]:checked');
+            let dob = document.getElementById("dob").value;
+            let phoneNumber = document.getElementById("phoneNumber").value;
+            let skills = document.getElementById("skills").value;
+            let previousExperiences = document.getElementById("previousExperiences").value;
+            let gpa = document.getElementById("gpa").value;
+            let email = document.getElementById("email").value;
+            let registerDate = document.getElementById("registerDate").value;
+            let opportunityID = document.getElementById("opportunityID").value;
 
-      if (orgName === "" || mission === "" || phoneNumber === "" || email === "" || password === "") 
-      {
-          alert("Please fill in all fields.");
-          return false;
-      }
-
-      return true; 
-    }
-
-
+            if (studentID === "" || fname === "" || lname === "" || !gender || dob === "" || phoneNumber === "" || skills === "" || previousExperiences === "" || gpa === "" || email === "" || registerDate === "" || opportunityID === "") {
+                alert("Please fill in all fields");
+                return false;
+            }
+        }
     </script>
     </body>
 </html>

@@ -4,7 +4,7 @@
         <meta charset = "UTF-8">
         <meta name = "viewport", content = "width = device-width,initial-scale = 1.0">
     <title> StudentServe Volunteering Platform </title>
-
+    <link rel="stylesheet" href="../css/organizationRegisterCSS.css">
     </head>
     <body>
         <form action="../Organization/Organization_Register_Action.php" method="post" name ="register" id = "register">

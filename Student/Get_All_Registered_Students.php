@@ -5,12 +5,12 @@
 include '../Settings/connection.php';
 
 // Create a function that returns the result of the SELECT query
-function getVolunteerOpportunities()
+function getRegisteredStudents()
 {
     global $con;
 
    // Write the SELECT all volunteer opprotunities query
-   $sql = "SELECT opportunityID, organizationName, cause, studentRole, volunteerDescription, volunteerLocation, startDate, endDate, numberOfHoursDaily, requirements FROM volunteerOpportunity";
+   $sql = "SELECT studentID, firstName, lastName, gender, dob,phoneNumber, interest, skills, previousExperiences, gpa, email, registerDate, oppID FROM registration";
 
    // Execute the query using global connection
    $result = mysqli_query($con, $sql);
@@ -22,10 +22,10 @@ function getVolunteerOpportunities()
         if (mysqli_num_rows($result) > 0)
         {
             // Fetch records if above is successful and assign to variable
-            $volunteerOpportunities = mysqli_fetch_all($result, MYSQLI_ASSOC);
+            $registeredStudents = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
             // Return the result variable: using the return command
-            return $volunteerOpportunities;
+            return $registeredStudents;
         }
         else 
         {

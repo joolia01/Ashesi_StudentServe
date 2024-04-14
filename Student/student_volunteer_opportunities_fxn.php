@@ -20,6 +20,7 @@ function displayVolunteerOpportunities()
         {
             
             echo "<tr>
+            <td>".$volunteerOpportunity['opportunityID']." </td>
             <td>".$volunteerOpportunity['organizationName']." </td>
             <td>".$volunteerOpportunity['cause']." </td>
             <td>".$volunteerOpportunity['studentRole']." </td>
@@ -29,7 +30,7 @@ function displayVolunteerOpportunities()
             <td>".$volunteerOpportunity['endDate']." </td>
             <td>".$volunteerOpportunity['numberOfHoursDaily']." </td>
             <td>".$volunteerOpportunity['requirements']." </td>
-            <td><a href='../admin/edit_chore_view.php?id=".$volunteerOpportunity['opportunityID']."'><i class='fa-solid fa-pencil'></i></a> <a href='../action/delete_chore_action.php?id=".$volunteerOpportunity['opportunityID']."'> <i class='fa-regular fa-trash-can'></i> </a> </td>
+            <td><a href='../Student/Register_For_Volunteer_Opportunity_View.php?id=".$volunteerOpportunity['opportunityID']."'><i class='fa-regular fa-registered'></i></a> </td>
             </tr>";
         }
 

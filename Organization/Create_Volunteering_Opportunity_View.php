@@ -1,13 +1,28 @@
 <!-- Volunteer Opportunities:
-This page is to allow organizations to create volunteer opportunities for students-->
+This page is to allow organizations to create volunteer opportunities for students. A table of the opportunities should be displayed. -->
 <!DOCTYPE html>
 <html> 
     <head>
         <meta charset = "UTF-8">
         <meta name = "viewport", content = "width = device-width,initial-scale = 1.0">
     <title> StudentServe Volunteering Platform </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="../css/createVolunteerOpportunitiesCSS.css">
+        <?php
+        //  Create and include the core file on this page to check if the user has logged in.
+        // include '../settings/core.php';
+        include '../Organization/organization_volunteer_opportunities_fxn.php';
+
+        // Check if the user is logged in using the function created on the core.php page 
+        // checkLogin(); // Apparently this is not necessary at the moment  
+        ?>
     </head>
     <body>
+    <main>
+    <div>
+    <section>
         <form action="../Organization/Create_Volunteering_Opportunity_Action.php" method="post" name ="createOpportunity" id = "createOpportunity">
             <div class="container">
               <h1>Create Volunteer Opportunities</h1>
@@ -63,6 +78,9 @@ This page is to allow organizations to create volunteer opportunities for studen
               <button type="submit" class="createOpportunityBtn" name ="createOpportunityBtn">Create Volunteer Opportunity</button> <br> <br>
             </div>
           </form>
+        
+          </section>
+          </div>
           
       <!-- Javascript Validation. Got assistance from w3schools -->
       <script>
@@ -84,5 +102,40 @@ This page is to allow organizations to create volunteer opportunities for studen
             return true;
         }
     </script>
+
+    <!-- Display the list of Volunteer Opportunities-->
+    <div>
+    <section>
+    <h2>Volunteer Opportunities</h2>
+
+            <table border="1">
+            <thead>
+                <tr>
+                <th colspan="10">Volunteer Opportunities</th>
+                </tr>
+                <tr>
+                <th>Opportunity ID</th>
+                <th>Organization Name</th>
+                <th>Cause</th>
+                <th>Student Role</th>
+                <th>Description</th>
+                <th>Location</th>
+                <th>Start Date</th>
+                <th>End Date</th>
+                <th>Hours Daily</th>
+                <th>Requirements</th>
+                <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Volunteer Opportunities -->
+                <?php
+                displayVolunteerOpportunities();
+                ?>
+            </tbody>
+            </table>
+    </section>
+    </div>
+
     </body>
 </html>

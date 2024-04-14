@@ -4,6 +4,7 @@
         <meta charset = "UTF-8">
         <meta name = "viewport", content = "width = device-width,initial-scale = 1.0">
     <title> StudentServe Volunteering Platform </title>
+    <link rel="stylesheet" href="../css/organizationLoginCSS.css">
     </head>
     <body>
         <form action="../Organization/Organization_Login_Action.php" method="post" name ="login" id = "login">

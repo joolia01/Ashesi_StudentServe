@@ -9,7 +9,7 @@ This page allows organizations to register for opportunities and events and trac
     <meta charset = "UTF-8">
     <meta name = "viewport", content = "width = device-width,initial-scale = 1.0">
     <title> Ashesi StudentServe Volunteering Platform</title>
-    <!--<link rel="stylesheet" href="../css/style.css"> -->
+    <link rel="stylesheet" href="../css/studentHomePageCSS.css"> 
 </head>
 <body>
     <div id="page-container">
@@ -24,16 +24,14 @@ This page allows organizations to register for opportunities and events and trac
                     <a href="../Student/Student_Volunteer_Tracking_View.php">Track a Volunteering Opportunity </a>
                 </div>
                 <div class="category">
-                <a href="#">Register for a Volunteer Opportunity </a>
+                <a href="../Student/Volunteer_For_Opportunity_View.php">Register for a Volunteer Opportunity </a>
                 </div>
-                <div class="category">
-                <a href="#">Register for an event </a>
-                </div>
+                
             </nav>
             
             <div id="mid-page">
                 <article>
-                    <img id ="hero-image" src="../images/StudentServe Logo.png">
+                    <img id ="hero-image" src="../images/StudentServe Logo (1).png">
                     <h1>
                         Welcome to StudentServe!
                     </h1>
