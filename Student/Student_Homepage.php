@@ -26,6 +26,12 @@ This page allows organizations to register for opportunities and events and trac
                 <div class="category">
                 <a href="../Student/Volunteer_For_Opportunity_View.php">Register for a Volunteer Opportunity </a>
                 </div>
+                <div class="category">
+                <a href="../Student/Registrations_Made_By_Student.php">View all Your Registrations </a>
+                </div>
+                <div class="category">
+                <a href="../Student/Student_Logout.php">Logout</a>
+                </div>
                 
             </nav>
             

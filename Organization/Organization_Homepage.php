@@ -27,6 +27,9 @@ volunteering opportunities or events
                 <div class="category">
                 <a href="../Organization/Organization_Registered_Students_View.php">View Registered Students </a>
                 </div>
+                <div class="category">
+                <a href="../Organization/Organization_Logout.php">Logout </a>
+                </div>
             </nav>
             
             <div id="mid-page">

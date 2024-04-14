@@ -1,8 +1,8 @@
 <?php
 
 
-// Include the Get_All_Registered_Students.php 
-include '../Student/Get_All_Registered_Students.php';
+// Include the Get_Student_Registrations.php 
+include '../Student/Get_Student_Registrations.php';
 
 function displayRegisteredStudents()
 {
@@ -34,7 +34,6 @@ function displayRegisteredStudents()
             <td>".$registeredStudent['registerDate']." </td>
             <td>".$registeredStudent['oppID']." </td>
             <td>".$registeredStudent['approvalStatus']." </td>
-            <td><a href='../Organization/Approve_Registered_Student.php?id=".$registeredStudent['registrationID']."'><i class='fa-regular fa-face-smile'></i></a> <a href='../Organization/Decline_Registered_Student.php?id=".$registeredStudent['registrationID']."'><i class='fa-regular fa-thumbs-down'></i></a>    </td>
             </tr>";
         }
 
@@ -44,7 +43,7 @@ function displayRegisteredStudents()
     else 
     {
 
-        echo "volunteer opportunities";
+        echo "Registrations you have made";
     }
 
 }

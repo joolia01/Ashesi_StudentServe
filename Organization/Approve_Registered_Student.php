@@ -11,7 +11,7 @@ if(isset($_GET['id']))
 
     // Write your UPDATE query to set the approval status to 'approved'
     $sql = "UPDATE registration SET approvalStatus = 'approved' WHERE registrationID = $registrationID";
-
+    
     // Execute the query
     if(mysqli_query($con, $sql)) 
     {

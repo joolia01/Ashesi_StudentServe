@@ -1,0 +1,50 @@
+/* Reset default browser styles */
+html, body, main, table, thead, tbody, tr, th, td {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Main content */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    margin: 0 auto;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+thead {
+    background-color: #cc0000;
+    color: #fff;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Action button */
+.action-btn {
+    padding: 5px 10px;
+    background-color: #cc0000;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.action-btn:hover {
+    background-color: #a30000;
+}
